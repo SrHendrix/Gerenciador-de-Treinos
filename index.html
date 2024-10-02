@@ -1,0 +1,55 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gerenciador de Treinos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="gym.png">
+    </head>
+    <body>
+        <header>
+            <h1>Gerenciador de Treinos</h1>
+        </header>
+
+        <main>
+            <section id="form-section">
+                <h2>Adicionar Treino</h2>
+                <form id="training-form">
+                    <label for="day">Dia da Semana:</label>
+                    <select id="day" required>
+                        <option value="Segunda">Segunda-Feira</option>
+                        <option value="Terça">Terça-Feira</option>
+                        <option value="Quarta">Quarta-Feira</option>
+                        <option value="Quinta">Quinta-Feira</option>
+                        <option value="Sexta">Sexta-Feira</option>
+                    </select>
+
+                    <label for="workout">Treino (Músculos a serem trabalhados):</label>
+                    <input type="text" id="workout" placeholder="Ex: Peito e Tríceps" required>
+
+                    <label for="description">Treino (Músculos a serem trabalhados):</label>
+                    <textarea type="text" id="description" placeholder="Ex: Supino 4x12, Triceps Corda 3x12" required></textarea>
+
+                    <label for="category">Categoria:</label>
+                    <select id="category" required>
+                        <option value="Força">Força</option>
+                        <option value="Hipertrofia">Hipertrofia</option>
+                        <option value="Resistência">Resistência</option>
+                    </select>
+
+                    <button type="submit">Adicionar</button>
+                </form>
+            </section>
+
+            <section id="schedule-section">
+                <h2>Cronograma Semanal</h2>
+                <div id="schedule"></div>
+            </section>
+        </main>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
